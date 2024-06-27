@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { ListaDeLegendas } from "./components/ListaDeLegendas.tsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ListaDeLegendas
+        items={[
+          { titulo: "Vermelho2", cor: "bg-red-500" },
+          { titulo: "Verde", cor: "bg-green-500" },
+          { titulo: "Azul", cor: "bg-blue-500" },
+        ]}
+      />
     </div>
   );
 }
