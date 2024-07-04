@@ -7,7 +7,7 @@ import del from "rollup-plugin-delete";
 
 const packageJson = require("./package.json");
 
-export default {
+const config = {
   input: "src/index.ts",
   output: [
     {
@@ -30,6 +30,11 @@ export default {
       tsconfig: "tsconfig.build.json",
       useTsconfigDeclarationDir: true,
     }),
-    postcss(),
+    postcss({
+      extract: true, // Extrair para um arquivo CSS separado
+      minimize: true,
+    }),
   ],
 };
+
+export default config;

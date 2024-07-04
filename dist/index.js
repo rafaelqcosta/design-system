@@ -4212,7 +4212,7 @@ var jsxRuntimeExports = jsxRuntime.exports;
 function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else if("object"==typeof e)if(Array.isArray(e))for(t=0;t<e.length;t++)e[t]&&(f=r(e[t]))&&(n&&(n+=" "),n+=f);else for(t in e)e[t]&&(n&&(n+=" "),n+=t);return n}function clsx(){for(var e,t,f=0,n="";f<arguments.length;)(e=arguments[f++])&&(t=r(e))&&(n&&(n+=" "),n+=t);return n}
 
 function ListaDeLegendas(props) {
-    return (jsxRuntimeExports.jsx("div", __assign({ className: "px-5 py-2 relative flex flex-col space-y-1" }, { children: props.items.map(function (item, index) { return (jsxRuntimeExports.jsxs("div", __assign({ className: "border-2 border-gray-100 px-5 rounded-md shadow-sm flex items-center space-x-4" }, { children: [jsxRuntimeExports.jsx("div", { className: clsx("w-5 h-2 rounded-full", item.cor) }), jsxRuntimeExports.jsx("div", __assign({ className: "text-gray-500 text-sm" }, { children: item.titulo }))] }), index)); }) })));
+    return (jsxRuntimeExports.jsx("div", __assign({ className: "px-5 py-2 relative flex flex-col space-y-1" }, { children: props.items.map(function (item, index) { return (jsxRuntimeExports.jsxs("div", __assign({ className: "border-2 border-gray-100 px-5 rounded-md shadow-sm flex items-center space-x-4" }, { children: [jsxRuntimeExports.jsx("div", { className: clsx("w-5 h-10 rounded-full", item.cor) }), jsxRuntimeExports.jsx("div", __assign({ className: "text-gray-500 text-sm" }, { children: item.titulo }))] }), index)); }) })));
 }
 
 exports.ListaDeLegendas = ListaDeLegendas;
