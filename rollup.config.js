@@ -33,6 +33,7 @@ const config = {
     postcss({
       extract: true, // Extrair para um arquivo CSS separado
       minimize: true,
+      plugins: [require("tailwindcss"), require("autoprefixer")],
     }),
   ],
 };
